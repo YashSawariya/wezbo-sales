@@ -1,0 +1,56 @@
+<resources>
+    <string name="app_name">Wezbo Sales</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="plan">
+        <item>Basic Plan-299</item>
+        <item>Standard Plan-399</item>
+    </string-array>
+
+    <string-array name="address">
+        <item>Faridabad</item>
+        <item>Andhra Pradesh</item>
+        <item>Punjab</item>
+        <item>Tamil Nadu</item>
+        <item>Rajasthan</item>
+        <item>Odisha</item>
+        <item>121001</item>
+        <item>121002</item>
+        <item>121003</item>
+        <item>121004</item>
+        <item>121005</item>
+        <item>121006</item>
+        <item>India</item>
+        <item>Afghanistan</item>
+        <item>America</item>
+    </string-array>
+
+    <string-array name="businesstype">
+        <item>Choose</item>
+        <item>Agency</item>
+        <item>Schools</item>
+        <item>Hospitals</item>
+        <item>Doctors</item>
+        <item>Marriage Hall</item>
+        <item>E_Commerce</item>
+        <item>Real Estate/Educational Institute</item>
+        <item>Fashion Designing/Merchandise/Lifestyle</item>
+        <item>F&amp;B/General Stores</item>
+        <item>Portfolio Website</item>
+        <item>Others</item>
+    </string-array>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

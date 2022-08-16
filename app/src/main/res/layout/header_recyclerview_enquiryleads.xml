@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/hcustomername"
+                android:layout_width="110dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:background="#ECF1EC"
+                android:text="Customer Name"/>
+
+            <TextView
+                android:id="@+id/hcustomeremail"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:background="#ECF1EC"
+                android:text="Customer Email"/>
+
+            <TextView
+                android:id="@+id/hcompanyname"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:background="#ECF1EC"
+                android:text="Company Name"/>
+
+            <TextView
+                android:id="@+id/hbusinesstype"
+                android:layout_width="125dp"
+                android:layout_height="40dp"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:background="#ECF1EC"
+                android:text="Business Type"/>
+
+            <TextView
+                android:id="@+id/haction"
+                android:layout_width="120dp"
+                android:layout_height="40dp"
+                android:background="#ECF1EC"
+                android:layout_marginRight="3dp"
+                android:gravity="center"
+                android:textColor="#333333"
+                android:text="Action"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#DBE1DB"/>
+
+    </LinearLayout>
+
+</HorizontalScrollView>

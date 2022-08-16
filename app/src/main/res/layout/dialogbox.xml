@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="350dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="8dp"
+    app:cardCornerRadius="8dp"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:background="#ffffff"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/customername"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:text="Customer Name:"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/customername1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_toRightOf="@+id/customername"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/customeremail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/customername"
+            android:text="Customer Email:"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/customeremail1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/customername1"
+            android:layout_toRightOf="@+id/customeremail"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/customerphone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/customeremail"
+            android:text="Customer Phone:"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/customerphone1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/customeremail1"
+            android:layout_toRightOf="@+id/customerphone"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/domainname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/customerphone"
+            android:text="Domain Name:"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/domainname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/customerphone1"
+            android:layout_toRightOf="@+id/domainname"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/companyname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/domainname"
+            android:text="Company Name:"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/companyname1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/domainname1"
+            android:layout_toRightOf="@+id/companyname"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/plan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/companyname"
+            android:text="Plan:"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/plane1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/companyname1"
+            android:layout_toRightOf="@+id/plan"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/businesstype"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/plan"
+            android:text="Business Type:"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/businesstype1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/plane1"
+            android:layout_toRightOf="@+id/businesstype"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/paymentid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_below="@+id/businesstype"
+            android:text="Payment Id:"
+            android:textColor="#333333"/>
+
+        <TextView
+            android:id="@+id/paymentid1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/businesstype1"
+            android:layout_toRightOf="@+id/paymentid"
+            android:textColor="#333333"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/b1"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_gravity="center"
+            android:textColor="#ffffff"
+            android:layout_below="@+id/paymentid"
+            android:layout_marginTop="10dp"
+            android:text="Close"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/button_background" />
+
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

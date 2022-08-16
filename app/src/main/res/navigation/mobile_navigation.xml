@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_dashboard">
+
+    <fragment
+        android:id="@+id/nav_dashboard"
+        android:name="com.example.wezbosales.ui.dashboard.DashboardFragment"
+        android:label="Dashboard"
+        tools:layout="@layout/fragment_dashboard" />
+
+    <fragment
+        android:id="@+id/nav_add_leads"
+        android:name="com.example.wezbosales.ui.addleads.AddLeadsFragment"
+        android:label="Add Leads"
+        tools:layout="@layout/fragment_add_leads" />
+
+    <fragment
+        android:id="@+id/nav_add_enquiry_leads"
+        android:name="com.example.wezbosales.ui.addenquiryleads.AddEnquiryLeadsFragment"
+        android:label="Add Enquiry"
+        tools:layout="@layout/fragment_add_enquiry_leads" />
+    <fragment
+        android:id="@+id/nav_enquiry_leads"
+        android:name="com.example.wezbosales.ui.enquiryleads.EnquiryLeadsFragment"
+        android:label="Enquiry Leads"
+        tools:layout="@layout/fragment_enquiry_leads" >
+        <action
+            android:id="@+id/action_nav_enquiry_leads_to_nav_update_leads"
+            app:destination="@id/nav_update_leads" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_pending_leads"
+        android:name="com.example.wezbosales.ui.pendingleads.PendingLeadsFragment"
+        android:label="Pending Leads"
+        tools:layout="@layout/fragment_pending_leads">
+        <action
+            android:id="@+id/action_nav_pending_leads_to_nav_update_leads"
+            app:destination="@id/nav_update_leads" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_complete_leads"
+        android:name="com.example.wezbosales.ui.completeleads.CompleteLeadsFragment"
+        android:label="Complete Leads"
+        tools:layout="@layout/fragment_complete_leads">
+        <action
+            android:id="@+id/action_nav_complete_leads_to_nav_update_leads"
+            app:destination="@id/nav_update_leads" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_update_leads"
+        android:name="com.example.wezbosales.ui.updateleads.UpdateLeadsFragment"
+        android:label="Update Leads"
+        tools:layout="@layout/fragment_update_leads">
+        <argument
+            android:name="id"
+            app:argType="string"
+             />
+        <argument
+            android:name="leadtype"
+            app:argType="string"
+            />
+    </fragment>
+</navigation>

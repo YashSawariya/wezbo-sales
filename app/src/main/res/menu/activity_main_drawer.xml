@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:icon="@drawable/ic_menu_dashboard"
+            android:title="Dashboard" />
+    </group>
+
+    <item android:title="Lead Management"
+        tools:ignore="HardcodedText">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_add_leads"
+                    android:icon="@drawable/ic_menu_add_leads"
+                    android:title="Add Leads" />
+
+                <item
+                    android:id="@+id/nav_add_enquiry_leads"
+                    android:icon="@drawable/ic_menu_add_enquiry_leads"
+                    android:title="Add Enquiry" />
+
+                <item
+                    android:id="@+id/nav_enquiry_leads"
+                    android:icon="@drawable/ic_menu_enquiry_leads"
+                    android:title="Enquiry Leads" />
+                <item
+                    android:id="@+id/nav_pending_leads"
+                    android:icon="@drawable/ic_menu_pending_leads"
+                    android:title="Pending Leads" />
+
+                <item
+                    android:id="@+id/nav_complete_leads"
+                    android:icon="@drawable/ic_menu_complete_leads"
+                    android:title="Completed Leads" />
+
+            </group>
+
+        </menu>
+
+
+    </item>
+
+</menu>

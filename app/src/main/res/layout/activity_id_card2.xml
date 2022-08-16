@@ -1,0 +1,307 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".IdCardActivity2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="match_parent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:elevation="12dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="8dp"
+            android:layout_height="700dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="320dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_horizontal|center_vertical"
+                        android:background="@drawable/cardbackgroundimage"
+                        >
+
+                        <de.hdodenhof.circleimageview.CircleImageView
+                            android:layout_width="170dp"
+                            android:layout_height="170dp"
+
+                            android:layout_gravity="bottom"
+                            android:layout_marginBottom="1dp"
+                            android:src="@drawable/wezboimage" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:layout_centerHorizontal="true"
+                        android:textStyle="bold"
+                        android:layout_marginTop="40dp"
+                        android:layout_gravity="center"
+                        android:textSize="18dp"
+                        android:textColor="#c52649"/>
+
+                    <TextView
+                        android:id="@+id/username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:layout_below="@+id/name"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="10dp"
+                        android:textColor="#333333" />
+
+                    <TextView
+                        android:id="@+id/name1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Name       :"
+                        android:layout_marginLeft="88dp"
+                        android:textColor="#333333"
+                        android:layout_below="@id/username"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:id="@+id/entername1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Admin"
+                        android:textColor="#333333"
+                        android:layout_below="@id/username"
+                        android:layout_toRightOf="@+id/name1"
+                        android:textStyle="bold"
+                        android:layout_marginTop="20dp"/>
+
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email        :"
+                        android:layout_marginLeft="88dp"
+                        android:layout_below="@id/name1"
+                        android:textColor="#333333"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/enteremail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:layout_toRightOf="@id/email"
+                        android:layout_below="@id/name1"
+                        android:textColor="#333333"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/phone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone       :"
+                        android:layout_marginLeft="88dp"
+                        android:layout_below="@id/email"
+                        android:textColor="#333333"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/enterphone"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Phone"
+                        android:layout_toRightOf="@id/phone"
+                        android:layout_below="@id/enteremail"
+                        android:textColor="#333333"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/dept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dept          :"
+                        android:layout_marginLeft="88dp"
+                        android:layout_below="@id/phone"
+                        android:textColor="#333333"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/enterdept"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Dept"
+                        android:layout_toRightOf="@id/dept"
+                        android:layout_below="@id/enterphone"
+                        android:textColor="#333333"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/validto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valid To    :"
+                        android:layout_marginLeft="88dp"
+                        android:layout_below="@id/dept"
+                        android:textColor="#333333"
+                        android:layout_marginTop="10dp"/>
+
+                    <TextView
+                        android:id="@+id/entervalidto"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Valid To"
+                        android:layout_toRightOf="@id/validto"
+                        android:layout_below="@id/enterdept"
+                        android:textColor="#333333"
+                        android:layout_marginTop="10dp"/>
+
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="350dp"
+            android:elevation="12dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            app:cardCornerRadius="8dp"
+            android:layout_height="700dp">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="5dp"
+                    android:background="@drawable/idardbackgroundimage1">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Instructions -"
+                        android:textColor="#c52649"
+                        android:layout_marginTop="60dp"
+                        android:textSize="25dp"
+                        android:background="#ffffff"
+                        android:textStyle="bold"/>
+
+                    <TextView
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:text="1. Employees are advised to carry their employee ID Card with them while on duty."
+                        android:layout_marginTop="15dp"
+                        android:gravity="left"
+                        android:textSize="12dp"
+                        android:textColor="#333333"
+                        android:layout_marginLeft="25dp"
+                        android:background="#ffffff"
+                        />
+
+                    <TextView
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:text="2. Loss of this card must be reported in written  to the issuing authority"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:layout_marginLeft="25dp"
+                        android:background="#ffffff"
+                        />
+
+                    <TextView
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:text="3. This card is not transferable and must be  surrendered when leaving the services of the  organisation."
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:layout_marginLeft="25dp"
+                        android:background="#ffffff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="If found, please return to:"
+                        android:textColor="#c52649"
+                        android:layout_marginTop="10dp"
+                        android:textSize="20dp"
+                        android:background="#ffffff"
+                        android:textStyle="italic"/>
+
+                    <TextView
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:text="Technobux India Pvt.Ltd"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textColor="#333333"
+                        android:layout_marginLeft="25dp"
+                        android:background="#ffffff"/>
+
+                    <TextView
+                        android:layout_width="275dp"
+                        android:layout_height="wrap_content"
+                        android:text="Plot No. 18, 2nd Floor, Udhyog Vihar Phase 1, Dundahera Village, Sector 20 Gurgaon, Haryana 122022.                                                                    Nextra Building Near Peer Baba Temple"
+                        android:layout_marginTop="10dp"
+                        android:gravity="left"
+                        android:textColor="#333333"
+                        android:textSize="12sp"
+                        android:layout_marginLeft="25dp"
+                        android:background="#ffffff"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Sign. of Issuing Authority"
+                        android:layout_marginTop="100dp"
+                        android:gravity="left"
+                        android:textStyle="bold"
+                        android:textSize="12sp"
+                        android:textColor="#333333"
+                        android:background="#ffffff"/>
+
+                </LinearLayout>
+
+            </FrameLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    </LinearLayout>
+
+</HorizontalScrollView>
